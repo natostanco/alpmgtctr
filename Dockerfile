@@ -10,7 +10,8 @@ RUN apk update \
  && apk del --purge alpine-sdk glib-dev curl-dev asciidoc \
  && apk add glib curl \
  && cd .. \
- && rm -r megatools
+ && rm -r megatools \
+ && rm -r /var/cache/apk/*
 
 CMD ["megadf", "-h"]
  
