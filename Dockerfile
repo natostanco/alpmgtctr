@@ -14,4 +14,3 @@ RUN apk update \
  && rm -r /var/cache/apk/*
 
 CMD ["megadf", "-h"]
- 
