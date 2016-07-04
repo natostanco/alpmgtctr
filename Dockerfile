@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM quay.io/natostanco/alporcctr
 
 RUN apk update \
  && apk add alpine-sdk glib-dev curl-dev asciidoc autoconf automake \
