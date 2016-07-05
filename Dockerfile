@@ -8,7 +8,7 @@ RUN apk update \
  && make \
  && make install \
  && apk del --purge alpine-sdk glib-dev curl-dev asciidoc autoconf automake \
- && apk add glib curl bash openrc \
+ && apk add glib curl bash etcd openrc  \
  && cd .. \
  && rm -r megatools \
  && rm -r /var/cache/apk/*
