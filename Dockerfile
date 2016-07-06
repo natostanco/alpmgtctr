@@ -1,6 +1,7 @@
 FROM quay.io/natostanco/alporcctr
 
-RUN apk update \
+RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories \
+ && apk update \
  && apk add alpine-sdk glib-dev curl-dev asciidoc autoconf automake \
  && git clone https://github.com/megous/megatools \
  && cd megatools \
